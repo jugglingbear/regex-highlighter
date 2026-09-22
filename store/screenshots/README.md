@@ -30,9 +30,8 @@ The sample page and these instructions are excluded from the extension ZIP by th
 
 ## Captured images
 
-- `01-guild-permits.png`: actual quick-search results, three gold permit matches.
 - `02-multiple-colors.png`: replacement capture with eleven matches and saved-rule controls visible, without a cursor.
-- `04-dot-all.png`: two peach note matches with the bear header, live-search controls, and optional flag checkboxes.
+- `01-dot-all.png`: two peach note matches with the bear header, live-search controls, and optional flag checkboxes.
 
 Images are 1280 × 800 PNGs captured from the local page after applying the installed extension.
 The replacement multicolor and Dot-all captures exclude personal browser chrome and the surrounding desktop.
@@ -55,5 +54,4 @@ individual lines; Dot-all lets `.` match the newline characters inside each note
 separate. Save both rules and apply together to show five matches in two colors.
 
 New captures should include the actual extension popup beside the document, with the pointer moved outside the
-captured area. The original quick-search capture still contains a pointer halo and should not be uploaded.
-The overlapping `02-multiple-colors-draft.png` is superseded by the corrected multicolor capture.
+captured area. Only the two final numbered screenshots are retained in this directory.

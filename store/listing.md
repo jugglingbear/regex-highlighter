@@ -52,5 +52,5 @@ Price: Free
 - Privacy policy: [public policy](https://github.com/jugglingbear/regex-highlighter/blob/main/PRIVACY.md).
 - Support: [GitHub issues](https://github.com/jugglingbear/regex-highlighter/issues).
 - Distribution: choose public, unlisted, or private and the available regions.
-- Screenshots: `screenshots/02-multiple-colors.png` and `screenshots/04-dot-all.png` (1280 × 800).
+- Screenshots: `screenshots/01-dot-all.png` and `screenshots/02-multiple-colors.png` (1280 × 800).
 - Promotional tile: `promo-tile.png` (440 × 280); editable source: `promo-tile.svg`.
