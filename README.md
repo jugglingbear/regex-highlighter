@@ -1,6 +1,24 @@
 # Regex Highlighter
 
-A local-only Chrome Manifest V3 extension. No runtime dependencies, account, or remote service.
+Find patterns on a web page, highlight them in color, and jump between matches—all on your device.
+A local-only Chrome Manifest V3 extension with no runtime dependencies, account, or remote service.
+
+![Saved rules highlight names, dates, and permits in three colors](store/screenshots/02-multiple-colors.png)
+
+## Features
+
+- **Live highlighting:** type a regular expression and see matches after a short pause.
+- **Match navigation:** press Enter or Next match to move through results.
+- **Saved rules:** reuse patterns and apply multiple colors together.
+- **Regex options:** choose ignore-case, multiline, dot-all, all-matches, and Unicode behavior.
+- **Local processing:** page content, patterns, and saved rules stay on your device.
+
+## Match across lines
+
+Enable **Dot-all** to let a dot match line breaks. Here, `BEGIN NOTE.*?END NOTE` highlights each complete note
+in peach. The non-greedy `.*?` stops at the next `END NOTE`; **All matches** finds both notes separately.
+
+![Dot-all highlights two multiline notes with the pattern and options visible](store/screenshots/01-dot-all.png)
 
 ## Privacy
 
@@ -12,21 +30,6 @@ See the [privacy policy](PRIVACY.md) for data handling, permissions, retention, 
 For an InfoSec review, the runtime files are listed below and the release ZIP contains the readable source code.
 The [security review](SECURITY-REVIEW.md) records the reviewed ZIP checksum, data flow, permissions, completed checks,
 and verification limits for workplace evaluation.
-
-## Package for release
-
-```sh
-make package
-```
-
-Requires Node.js, npm, and the `zip` command (included with macOS). Runs the automated tests first, then creates
-`dist/chrome-regex-0.1.0.zip`, using the version in `manifest.json` for the filename. This command does not bump the
-version or upload anything. Rebuilding the same version replaces its ZIP only after packaging succeeds.
-
-The archive has `manifest.json` at its root and includes only the popup, runtime JavaScript, and four PNG icons.
-Tests, documentation, icon source, development scripts, and prior builds are excluded. Generated archives are ignored
-by Git. Icons are packaged as checked in; run `make icons` after editing their generator. When adding runtime files,
-update the explicit inclusion list in `scripts/package.js`.
 
 ## Install locally
 
@@ -103,6 +106,21 @@ Reload the extension card at `chrome://extensions`, then reopen with **Command +
 - Highlights use CSS Custom Highlight, leaving the page’s text and elements intact. Re-run after page content changes; navigation removes highlights. Invalid or timed-out searches preserve prior highlights.
 - Maximum 1,000,000 collected characters, 20,000 text nodes, and 5,000 highlights shared across enabled rules, in list order. Up to 30 rules can be saved. Partial results are labeled; later rules may receive no remaining highlight budget. The entire matching batch runs in a local worker terminated after two seconds to contain expensive expressions. Timeout or a changed page leaves previous highlights intact.
 - Permissions: `activeTab` grants access after your toolbar click or activation shortcut; `scripting` runs the highlighter in that tab; `storage` remembers the saved rule library. No persistent host permissions and no network requests.
+
+## Package for release
+
+```sh
+make package
+```
+
+Requires Node.js, npm, and the `zip` command (included with macOS). Runs the automated tests first, then creates
+`dist/chrome-regex-0.1.0.zip`, using the version in `manifest.json` for the filename. This command does not bump the
+version or upload anything. Rebuilding the same version replaces its ZIP only after packaging succeeds.
+
+The archive has `manifest.json` at its root and includes only the popup, runtime JavaScript, and four PNG icons.
+Tests, documentation, icon source, development scripts, and prior builds are excluded. Generated archives are ignored
+by Git. Icons are packaged as checked in; run `make icons` after editing their generator. When adding runtime files,
+update the explicit inclusion list in `scripts/package.js`.
 
 ## Test
 
