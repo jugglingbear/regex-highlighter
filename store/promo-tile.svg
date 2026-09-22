@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <title>Regex Highlighter — Find patterns. Highlight locally.</title>
+  <rect width="440" height="280" fill="#f5f1e8"/>
+  <circle cx="424" cy="18" r="108" fill="#e7def8"/>
+  <circle cx="438" cy="290" r="70" fill="#e4d9f6"/>
+  <svg x="20" y="24" width="96" height="96" viewBox="0 0 128 128">
+  <title>Regex Highlighter</title>
+  <g transform="translate(12.8 12.8) scale(.8)">
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="#6745d8"/>
+  <polyline points="28,23 26.003,26.25 24.181,29.5 22.531,32.75 21.056,36 19.753,39.25 18.625,42.5 17.67,45.75 16.889,49 16.281,52.25 15.847,55.5 15.587,58.75 15.5,62 15.587,65.25 15.847,68.5 16.281,71.75 16.889,75 17.67,78.25 18.625,81.5 19.753,84.75 21.056,88 22.531,91.25 24.181,94.5 26.003,97.75 28,101" fill="none" stroke="#fff9ec" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="100,23 101.771,25.733 103.417,28.431 104.938,31.094 106.333,33.722 107.604,36.316 108.75,38.875 109.771,41.399 110.667,43.889 111.438,46.344 112.083,48.764 112.604,51.149 113,53.5 113.271,55.816 113.417,58.097 113.438,60.344 113.333,62.556 113.104,64.733 112.75,66.875 112.271,68.983 111.667,71.056 110.938,73.094 110.083,75.097 109.104,77.066 108,79" fill="none" stroke="#fff9ec" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="44" cy="48" rx="13" ry="14" fill="#fff9ec"/>
+  <ellipse cx="84" cy="48" rx="13" ry="14" fill="#fff9ec"/>
+  <ellipse cx="44" cy="48" rx="7" ry="8" fill="#6745d8"/>
+  <ellipse cx="84" cy="48" rx="7" ry="8" fill="#6745d8"/>
+  <ellipse cx="64" cy="73" rx="32" ry="29" fill="#fff9ec"/>
+  <ellipse cx="52" cy="68" rx="3.8" ry="4.5" fill="#222331"/>
+  <ellipse cx="76" cy="68" rx="3.8" ry="4.5" fill="#222331"/>
+  <ellipse cx="64" cy="79" rx="7" ry="4.8" fill="#222331"/>
+  <polyline points="64,82 64,87" fill="none" stroke="#222331" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="53,86 53.339,86.8 53.687,87.535 54.047,88.203 54.417,88.806 54.797,89.342 55.188,89.813 55.589,90.217 56,90.556 56.422,90.828 56.854,91.035 57.297,91.175 57.75,91.25 58.214,91.259 58.688,91.201 59.172,91.078 59.667,90.889 60.172,90.634 60.688,90.313 61.214,89.925 61.75,89.472 62.297,88.953 62.854,88.368 63.422,87.717 64,87" fill="none" stroke="#222331" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="64,87 64.578,87.717 65.146,88.368 65.703,88.953 66.25,89.472 66.786,89.925 67.313,90.313 67.828,90.634 68.333,90.889 68.828,91.078 69.313,91.201 69.786,91.259 70.25,91.25 70.703,91.175 71.146,91.035 71.578,90.828 72,90.556 72.411,90.217 72.813,89.813 73.203,89.342 73.583,88.806 73.953,88.203 74.313,87.535 74.661,86.8 75,86" fill="none" stroke="#222331" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="103,87 103,109" fill="none" stroke="#6745d8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="93.5,92.5 112.5,103.5" fill="none" stroke="#6745d8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="93.5,103.5 112.5,92.5" fill="none" stroke="#6745d8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="103,87 103,109" fill="none" stroke="#ff897d" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="93.5,92.5 112.5,103.5" fill="none" stroke="#ff897d" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="93.5,103.5 112.5,92.5" fill="none" stroke="#ff897d" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" fill="#292638">
+    <text x="127" y="62" font-size="29" font-weight="700">Regex</text>
+    <text x="127" y="94" font-size="29" font-weight="700">Highlighter</text>
+    <text x="30" y="146" font-size="19" font-weight="500">Find patterns. Highlight locally.</text>
+  </g>
+  <rect x="30" y="172" width="380" height="76" rx="12" fill="#fffdf9" stroke="#d8d0c0"/>
+  <g font-family="Menlo, Monaco, monospace" font-size="14" fill="#292638">
+    <rect x="45" y="186" width="118" height="23" rx="3" fill="#b7a4f4"/>
+    <text x="50" y="202">Barnaby Bear</text>
+    <rect x="178" y="186" width="105" height="23" rx="3" fill="#ffe066"/>
+    <text x="183" y="202">JB-1847-001</text>
+    <rect x="45" y="216" width="112" height="20" rx="3" fill="#9de0ca"/>
+    <text x="50" y="231">14 June 1847</text>
+  </g>
+  <text x="179" y="231" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="12" fill="#736854">Your patterns, in color.</text>
+</svg>
