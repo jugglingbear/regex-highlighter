@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Regex Highlighter</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header><img class="badge" src="icons/icon-48.png" width="48" height="48" alt=""><div><h1>Regex Highlighter</h1><p>Your patterns, in color</p></div></header>
+<form id="form">
+<div class="section-title"><h2 id="editorTitle">Quick highlight</h2><button id="cancel" type="button" hidden>New quick search</button></div>
+<label for="pattern">Regular expression</label>
+<textarea id="pattern" rows="2" placeholder="e.g. \b(warning|caution)\b" autocomplete="off" spellcheck="false" aria-describedby="hint" autofocus></textarea>
+<p id="hint" class="hint">Highlights update as you type · Enter: next match · Shift+Enter: newline. No / delimiters.</p>
+<fieldset><legend>Regex flags</legend><label><input id="ignoreCase" type="checkbox" checked> Ignore case</label><label><input id="multiline" type="checkbox"> Multiline</label><label><input id="dotAll" type="checkbox"> Dot-all</label><label title="Uncheck to highlight one result at a time in quick search. Enter moves to the next. Saved rules use the first match."><input id="allMatches" type="checkbox" checked> All matches</label><label title="Treat Unicode code points as characters and enable Unicode property escapes."><input id="unicode" type="checkbox" checked> Unicode</label></fieldset>
+<div class="quick-options"><label for="color">Highlight color</label><input id="color" type="color" value="#ffe066"></div>
+<div class="actions"><button id="preview" class="primary" type="submit">Refresh</button><button id="next" type="button" disabled>Next match</button></div>
+<div class="actions secondary-actions"><button id="saveQuick" type="button">Save highlight</button><button id="clear" type="button">Clear page</button></div>
+<details id="saveOptions"><summary>Name or edit saved rule (optional)</summary><div class="save-row"><label class="name-field" for="name">Rule name<input id="name" placeholder="e.g. Warning text" maxlength="80"></label><button id="save" type="button">Save as new rule</button></div></details>
+</form>
+<p id="status" role="status" aria-live="polite">Type a pattern to highlight. Enter moves to the next match.</p>
+<div id="counts"></div>
+<section aria-label="Saved rules">
+<div class="section-title"><h2>Saved rules</h2><button id="new" type="button">+ New</button></div>
+<p class="hint">Checked rules apply together. First rule wins overlaps.</p>
+<div id="rules"></div>
+<div class="actions"><button id="apply" type="button">Apply enabled rules</button></div>
+</section>
+
+<footer>Saved on this device · Live search on this page<br>Re-run after page updates. ⌘⇧Y on Mac · Ctrl⇧Y elsewhere</footer>
+<script type="module" src="popup.js"></script>
+</body></html>
